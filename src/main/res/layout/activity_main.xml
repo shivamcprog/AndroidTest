@@ -1,89 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--   Parent Layout With Vertical Orientation -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="30dp">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical" >
 
-    <!--  1st Child Layout  (Nested In Parent Layout) with Horizontal Orientation -->
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
+        android:id="@+id/vikas"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:hint="Enter Two Numbers "
+        android:textColor="#F00"
+        />
 
-        <TextView
-            android:id="@+id/textViewName"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="25dp"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Name" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_weight="1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:ems="10" />
-
-    </LinearLayout>
-
-    <!--  2nd Child Layout  (Nested In Parent Layout) with Horizontal Orientation -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <EditText
+        android:id="@+id/first"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:hint="First Name" />
 
-        <TextView
-            android:id="@+id/textViewPassword"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="25dp"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Password" />
-
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_weight="1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPassword" />
-
-    </LinearLayout>
-
-    <!--  3rd Child Layout  (Nested In Parent Layout) with Horizontal Orientation -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <EditText
+        android:id="@+id/second"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:hint="Last Name" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_weight="1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Login" />
+    <Button
+        android:id="@+id/Plus"
+        android:layout_marginTop="200dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="btn_SubmitClick"
+        android:text="SUBMIT" />
 
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_weight="1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Cancel " />
 
-    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="200dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:onClick="btn_SubmitClick"
+        android:text="SUBMIT" />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </LinearLayout>
-
