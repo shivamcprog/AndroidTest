@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.listviewapp">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.relativelayout">
 
     <application
         android:allowBackup="true"
@@ -10,12 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+            <textview
 
-</manifest>
+                android:id="@+id/txt1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textcolor="#000"
+                android:textstyle="bold"
+                android:text="text1"/>
+            <textview
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textcolor="#000"
+                android:textstyle="bold"
+                android:text="text2"
+                android:text_below="@=id/txt1"/>
+
+        </Relative>
